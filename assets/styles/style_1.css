@@ -1,0 +1,55 @@
+.block-container {
+    padding-top: 2rem !important;
+}
+
+[data-testid='stFileUploaderDropzone'],
+[data-testid='stAlertContainer'],
+[data-testid='stExpander'] > details {
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+[data-testid='stFileUploaderDropzoneInstructions'] > div > span,
+[data-testid='stFileUploaderDropzone'] [data-testid='stMarkdownContainer'] > p {
+    font-size: 0;
+}
+
+[data-testid='stFileUploaderDropzoneInstructions'] > div > span::after {
+    font-size: 14px;
+    content: 'Limite de 5 MB por arquivo • PDF';
+}
+
+[data-testid='stFileUploaderDropzone'] [data-testid='stMarkdownContainer'] > p::after {
+    font-size: 14px;
+    content: 'Procurar arquivo';
+}
+
+[data-testid='stProgress'] {
+    margin-top: -16px;
+}
+
+[data-testid='stProgress'] [data-testid='stProgressBarTrack'] {
+    min-height: 30px;
+    border-radius: 0.5rem;
+}
+
+[data-testid='stProgress'] [data-testid='stMarkdownContainer'] > p {
+    display: flex;
+    align-items: baseline;
+    width: 100%;
+    margin: 0;
+}
+
+[data-testid='stProgress'] [data-testid='stMarkdownContainer'] > p::before {
+    font-size: 1.5rem;
+    font-weight: 600;
+    flex-shrink: 0;
+}
+
+[data-testid='stProgress'] [data-testid='stMarkdownContainer'] > p::after {
+    flex: 1;
+    text-align: right;
+    overflow: hidden;
+    white-space: nowrap;
+}
